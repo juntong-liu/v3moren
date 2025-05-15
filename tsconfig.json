@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowJs": true,  // 允许编译 JS 文件
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"] // 必须与 vite.config.ts 的 alias 匹配
+    },
+   "target": "ESNext",
+    "lib": [],
+    "types": ["vite/client"],  // 关键添加这一行
+
+
+  }
+}
