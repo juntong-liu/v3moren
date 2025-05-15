@@ -1,7 +1,6 @@
 <template>
     <div>
-       about
-       
+       这是关于我们
     </div>
 </template>
 
